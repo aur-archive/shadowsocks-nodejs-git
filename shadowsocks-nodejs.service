@@ -1,0 +1,9 @@
+[Unit]
+Description=A lightweight tunnel proxy.
+
+[Service]
+ExecStart=/usr/bin/sslocal /opt/shadowsocks-nodejs/config.json
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
